@@ -1,0 +1,54 @@
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ebd9c8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.direct-contact {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.1rem;
+}
+
+.phone-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: underline;
+}

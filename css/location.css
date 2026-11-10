@@ -1,0 +1,41 @@
+.location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.map-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.location-details {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ebd9c8;
+}
+
+.location-details h3 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.location-details p, .location-details ul {
+  margin-bottom: 12px;
+}
+
+.location-details ul {
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .location-container {
+    flex-direction: row;
+  }
+  .map-box, .location-details {
+    flex: 1;
+  }
+}

@@ -1,0 +1,69 @@
+.hero-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 반응형 그리드 (과제 조건 2: 1개 -> 2개 -> 3개) */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: var(--bg-card);
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e5dec9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+@media (min-width: 600px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
